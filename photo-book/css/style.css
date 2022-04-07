@@ -1,1 +1,167 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+@charset "UTF-8";
+/* ****************************************************
+		   共通
+***************************************************** */
+/* -----------------------------------------------------
+            タグ
+----------------------------------------------------- */
+body {
+  background-color: #f4f9ff;
+  color: #333;
+  font-size: 0.875rem;
+}
+
+p {
+  line-height: 1.5;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* -----------------------------------------------------
+            大枠
+----------------------------------------------------- */
+.header__inner,
+.standard-wrapper,
+.main-visual,
+.footer__inner {
+  max-width: 1000px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.standard-wrapper {
+  width: 600px;
+  padding-right: 40px;
+  padding-left: 40px;
+}
+
+.main-visual {
+  padding-top: 0;
+  padding-bottom: 30px;
+}
+
+.footer__inner {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+/* -----------------------------------------------------
+            fontクラス
+----------------------------------------------------- */
+.level2-heading {
+  font-weight: bold;
+  font-size: 1.125rem;
+  margin-bottom: 1em;
+}
+
+/* -----------------------------------------------------
+            backgroundクラス
+----------------------------------------------------- */
+.bg-white {
+  background-color: #fff;
+}
+
+/* ****************************************************
+		   クラス別
+***************************************************** */
+/* -----------------------------------------------------
+            .header
+----------------------------------------------------- */
+.header-logo__img {
+  display: block;
+  width: 160px;
+}
+
+/* -----------------------------------------------------
+            .index
+----------------------------------------------------- */
+.order-list {
+  counter-reset: order-list;
+}
+
+.order-list > *:last-child {
+  margin-bottom: 0;
+}
+
+.order-list__item {
+  position: relative;
+  padding-left: 1em;
+  margin-left: .25em;
+  margin-bottom: 32px;
+}
+
+.order-list__item::before {
+  content: counter(order-list) ". ";
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #333;
+  counter-increment: order-list;
+}
+
+/* -----------------------------------------------------
+            .detail
+----------------------------------------------------- */
+.detail-img {
+  margin-bottom: 20px;
+}
+
+.detail__title {
+  font-size: 1.125rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.detail-author {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.detail-author .detail-author__header {
+  width: 50%;
+}
+
+.detail-author .detail-author__text {
+  width: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.detail-author {
+  padding-bottom: .5em;
+  border-bottom: 1px solid #dedede;
+}
+
+.detail-author .detail-author__header, .detail-author .detail-author__text {
+  margin-bottom: 1em;
+}
+
+.detail-author .detail-author__header:last-of-type,
+.detail-author .detail-author__text:last-of-type {
+  margin-bottom: 0;
+}
+
+.detail-shop__link {
+  color: #333;
+}
+
+/* -----------------------------------------------------
+            .footer
+----------------------------------------------------- */
+.copyright__wrapper {
+  text-align: center;
+}
+
+.copyright__text {
+  font-size: .5rem;
+}
+/*# sourceMappingURL=style.css.map */
