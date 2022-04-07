@@ -19,14 +19,26 @@ img {
             クラス
 ----------------------------------------------------- */
 .header__inner,
+.footer__inner,
 .content {
     max-width: 960px;
     margin-right: auto;
     margin-left: auto;
     padding-right: 4%;
     padding-left: 4%;
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.header__inner {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+.footer__inner {
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 /* -----------------------------------------------------
             fontクラス
@@ -45,8 +57,8 @@ img {
 /* -----------------------------------------------------
             margin paddingクラス
 ----------------------------------------------------- */
-.mt-50 {
-    margin-top: 50px;
+.mt-40 {
+    margin-top: 40px;
 }
 /* ****************************************************
 		   クラス別
@@ -54,13 +66,6 @@ img {
 /* -----------------------------------------------------
             .header
 ----------------------------------------------------- */
-.header__inner {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    display: flex;
-    justify-content:space-between;
-    align-items: center;
-}
 .header__logo {
     width: 120px;
     display: block;
@@ -135,7 +140,7 @@ img {
     font-weight: bold;
 }
 
-// col3
+/*  col3  */
 .bicycleCards {
     display: flex;
     flex-wrap: wrap;
@@ -150,4 +155,13 @@ img {
             margin-right: 0;
         }
     }
+}
+/* -----------------------------------------------------
+            .footer
+----------------------------------------------------- */
+.copyright__wrapper {
+    text-align: center;
+}
+.copyright__text {
+    font-size: .5rem;
 }

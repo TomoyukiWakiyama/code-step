@@ -22,14 +22,34 @@ img {
             クラス
 ----------------------------------------------------- */
 .header__inner,
+.footer__inner,
 .content {
   max-width: 960px;
   margin-right: auto;
   margin-left: auto;
   padding-right: 4%;
   padding-left: 4%;
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.header__inner {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer__inner {
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 /* -----------------------------------------------------
@@ -51,8 +71,8 @@ img {
 /* -----------------------------------------------------
             margin paddingクラス
 ----------------------------------------------------- */
-.mt-50 {
-  margin-top: 50px;
+.mt-40 {
+  margin-top: 40px;
 }
 
 /* ****************************************************
@@ -61,20 +81,6 @@ img {
 /* -----------------------------------------------------
             .header
 ----------------------------------------------------- */
-.header__inner {
-  padding-top: 10px;
-  padding-bottom: 10px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
 .header__logo {
   width: 120px;
   display: block;
@@ -171,6 +177,7 @@ img {
   font-weight: bold;
 }
 
+/*  col3  */
 .bicycleCards {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -191,5 +198,16 @@ img {
 
 .bicycleCards--col3 > .bicycleCards__item:nth-child(3n) {
   margin-right: 0;
+}
+
+/* -----------------------------------------------------
+            .footer
+----------------------------------------------------- */
+.copyright__wrapper {
+  text-align: center;
+}
+
+.copyright__text {
+  font-size: .5rem;
 }
 /*# sourceMappingURL=style.css.map */
