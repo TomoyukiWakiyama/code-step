@@ -7,7 +7,8 @@ p {
   line-height: 1.5;
 }
 
-.header__inner, .content {
+.header__inner,
+.content {
   max-width: 960px;
   margin-right: auto;
   margin-left: auto;
@@ -67,14 +68,13 @@ p {
   height: 100%;
 }
 
+.hero__img {
+  width: 100%;
+}
+
 .header-nav__link {
   color: #333;
   text-decoration: none;
-  font-size: 0.9rem;
-}
-
-.hero__img {
-  width: 100%;
 }
 
 .level2-heading__wrapper {
