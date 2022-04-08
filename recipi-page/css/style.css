@@ -1,0 +1,167 @@
+@charset "UTF-8";
+/* ****************************************************
+		   共通
+***************************************************** */
+/* -----------------------------------------------------
+            タグ
+----------------------------------------------------- */
+body {
+  color: #333;
+  font-size: 0.875rem;
+}
+
+p {
+  line-height: 1.5;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* -----------------------------------------------------
+            外枠
+----------------------------------------------------- */
+.header__wrapper {
+  max-width: 1000px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.hero__wrapper {
+  max-width: 1000px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 30px;
+}
+
+.footer__wrapper {
+  max-width: 1000px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.content__wrapper {
+  max-width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/* -----------------------------------------------------
+            フォントクラス
+----------------------------------------------------- */
+/* -----------------------------------------------------
+            背景クラス
+----------------------------------------------------- */
+.bg-gray {
+  background-color: #f5f5f5;
+}
+
+/* ****************************************************
+		   クラス別
+***************************************************** */
+/* -----------------------------------------------------
+            .recipe__img
+----------------------------------------------------- */
+.recipe {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.recipe__img-wrapper {
+  max-width: 40vw;
+  margin-right: 2%;
+}
+
+.recipe__img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  vertical-align: bottom;
+}
+
+/* -----------------------------------------------------
+            .menu
+----------------------------------------------------- */
+.menu1__heading {
+  font-size: 2rem;
+  padding-top: 30px;
+  margin-bottom: 20px;
+}
+
+.menu2__heading {
+  font-size: 1.5rem;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.menu__text {
+  font-size: 1.125rem;
+  margin-bottom: 40px;
+}
+
+/* -----------------------------------------------------
+            .food-stuff
+----------------------------------------------------- */
+.food-stuff__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.food-stuff__name {
+  width: 75%;
+  margin-bottom: 1em;
+  padding-left: .5em;
+}
+
+.food-stuff__stock {
+  width: 25%;
+  text-align: right;
+}
+
+/* -----------------------------------------------------
+            .making
+----------------------------------------------------- */
+.making-list {
+  margin-top: 10px;
+  counter-reset: child-order-list;
+}
+
+.making-list > *:last-child {
+  margin-bottom: 0;
+}
+
+.making__text {
+  position: relative;
+  margin-left: .5em;
+  margin-top: 10px;
+  margin-bottom: 1em;
+  padding-left: 1em;
+}
+
+.making__text::before {
+  content: counter(child-order-list) ". ";
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #333;
+  counter-increment: child-order-list;
+}
+/*# sourceMappingURL=style.css.map */
