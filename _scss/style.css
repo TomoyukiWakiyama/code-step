@@ -31,15 +31,7 @@ img {
   padding-bottom: 30px;
 }
 
-.content__wrapper {
-  max-width: 760px;
-  margin-right: 20px;
-  margin-left: 20px;
-  padding-top: 30px;
-  padding-bottom: 30px;
-}
-
-.main-visual__wrapper {
+.hero__wrapper {
   max-width: 1000px;
   margin-right: auto;
   margin-left: auto;
@@ -48,6 +40,14 @@ img {
 
 .footer__wrapper {
   max-width: 1000px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.content__wrapper {
+  max-width: 760px;
   margin-right: auto;
   margin-left: auto;
   padding-top: 30px;

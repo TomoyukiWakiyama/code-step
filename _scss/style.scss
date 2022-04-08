@@ -21,7 +21,6 @@ $maxWidth: 1000px;
 $contentWidth: 760px;
 $contentMargin: 30px;
 $contentPadding: 30px;
-
 .header__wrapper {
     max-width: $maxWidth;
     margin-right: auto;
@@ -31,14 +30,7 @@ $contentPadding: 30px;
     padding-top: $contentPadding;
     padding-bottom: $contentPadding;
 }
-.content__wrapper {
-    max-width: $contentWidth;
-    margin-right: 20px;
-    margin-left: 20px;
-    padding-top: $contentPadding;
-    padding-bottom: $contentPadding;
-}
-.main-visual__wrapper {
+.hero__wrapper {
     max-width: $maxWidth;
     margin-right: auto;
     margin-left: auto;
@@ -46,6 +38,13 @@ $contentPadding: 30px;
 }
 .footer__wrapper {
     max-width: $maxWidth;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: $contentPadding;
+    padding-bottom: $contentPadding;
+}
+.content__wrapper {
+    max-width: $contentWidth;
     margin-right: auto;
     margin-left: auto;
     padding-top: $contentPadding;
