@@ -1,0 +1,99 @@
+/* ****************************************************
+		   要素型
+***************************************************** */
+body {
+    color: #24292e;
+}
+p {
+    line-height: 1.5;
+}
+img {
+    max-width: 100%;
+}
+/* ****************************************************
+		   コンテンツ
+***************************************************** */
+$maxWidth: 960px;
+.header {
+    max-width: $maxWidth;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.hero {
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 30px;
+}
+.footer {
+    max-width: $maxWidth;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+// .content
+.about,
+.work,
+.news,
+.contact {
+    max-width: 960px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    // padding-right: 4%;
+    // padding-left: 4%;
+}
+
+/* -----------------------------------------------------
+            FONT
+----------------------------------------------------- */
+.level2-heading {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 65px;
+    letter-spacing: .25rem;
+}
+
+/* ****************************************************
+		   クラス別
+***************************************************** */
+/* -----------------------------------------------------
+            .header
+----------------------------------------------------- */
+
+/* -----------------------------------------------------
+            .hero
+----------------------------------------------------- */
+.hero-picture__img-pc {
+    width: 100%;
+    max-width: 1920px;
+    height: 420px;
+    background-position: center;
+    object-fit: cover;
+}
+
+/* -----------------------------------------------------
+            .about
+----------------------------------------------------- */
+
+/* -----------------------------------------------------
+            .work
+----------------------------------------------------- */
+.work-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    & .work-images__item {
+        width: 30%;
+        margin-bottom: 24px;
+        margin-right: 20px;
+        &:nth-child(3n) {
+            margin-right: 0;
+        }
+    }
+}

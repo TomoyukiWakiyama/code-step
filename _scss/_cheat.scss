@@ -117,6 +117,7 @@
       margin-right: 0;
     }
 }
+
 /* -----------------------------------------------------
             card 1col
 ----------------------------------------------------- */
@@ -154,4 +155,31 @@
 .card__text {
     color: #777;
 }
-  
+
+/* -----------------------------------------------------
+            picture > source
+----------------------------------------------------- */
+.hero-picture__img-pc {
+    width: 100%;
+    max-width: 1920px;
+    height: 420px;
+    background-position: center;
+    object-fit: cover;
+}
+
+/* -----------------------------------------------------
+            three-images
+----------------------------------------------------- */
+.three-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    & .three-images__item {
+        width: 30%;
+        margin-bottom: 24px;
+        margin-right: 20px;
+        &:nth-child(3n) {
+            margin-right: 0;
+        }
+    }
+}

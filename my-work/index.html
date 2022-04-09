@@ -5,9 +5,57 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="../my-work/css/rest.css">
+    <link rel="stylesheet" href="../my-work/css/style.css">
 </head>
 <body>
-    
+    <header class="header">
+        <div class="header__inner">
+            <h1 class="header__logo-wrapper">
+                <img class="header__logo" src="../my-work/images/logo.svg" alt="">
+            </h1>
+        </div>
+        <!-- /.header__inner -->
+    </header>
+    <!-- /.header -->
+    <main>
+        <div class="hero">
+            <picture class="hero-picture">
+                <source class="hero-picture__img-sp" srcset="../my-work/images/mainvisual-sp.jpg" media="(max-width: 600px)" /><!-- ○○px以上で表示する画像 -->
+                <img class="hero-picture__img-pc" src="../my-work/images/mainvisual-pc.jpg" alt=""/><!-- それ以外の場合に表示する画像 -->
+            </picture>
+        </div>
+        <div class="about">
+            <h2 class="level2-heading">About</h2>
+        </div>
+        <!-- /.about -->
+
+        <div class="work">
+            <h2 class="level2-heading">Work</h2>
+            <ul class="work-images">
+                <li class="work-images__item"><img src="../my-work/images/works1.jpg" alt=""></li>
+                <li class="work-images__item"><img src="../my-work/images/works2.jpg" alt=""></li>
+                <li class="work-images__item"><img src="../my-work/images/works3.jpg" alt=""></li>
+                <li class="work-images__item"><img src="../my-work/images/works4.jpg" alt=""></li>
+                <li class="work-images__item"><img src="../my-work/images/works5.jpg" alt=""></li>
+                <li class="work-images__item"><img src="../my-work/images/works6.jpg" alt=""></li>
+            </ul>
+        </div>
+        <!-- /.work -->
+
+        <div class="news">
+            <h2 class="level2-heading">News</h2>
+        </div>
+        <!-- /.news -->
+        <div class="contact">
+            <h2 class="level2-heading">Contact</h2>
+        </div>
+        <!-- /.contact -->
+    </main>
+
+    <footer class="footer">
+
+    </footer>
+    <!-- /.footer -->
 </body>
 </html>
