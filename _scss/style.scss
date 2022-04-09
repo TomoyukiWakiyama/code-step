@@ -19,7 +19,6 @@ img {
 ----------------------------------------------------- */
 $maxWidth: 1000px;
 $contentWidth: 760px;
-$contentMargin: 30px;
 $contentPadding: 30px;
 .header__wrapper {
     max-width: $maxWidth;
@@ -34,7 +33,7 @@ $contentPadding: 30px;
     max-width: $maxWidth;
     margin-right: auto;
     margin-left: auto;
-    margin-bottom: $contentMargin;
+    margin-bottom: 30px;
 }
 .footer__wrapper {
     max-width: $maxWidth;
