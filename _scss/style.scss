@@ -1,9 +1,6 @@
 /* ****************************************************
-		   共通
+		   要素型
 ***************************************************** */
-/* -----------------------------------------------------
-            タグ
------------------------------------------------------ */
 body {
     color: #333;
     font-size: 0.875rem;
@@ -14,50 +11,41 @@ p {
 img {
     max-width: 100%;
 }
-/* -----------------------------------------------------
-            外枠
------------------------------------------------------ */
+/* ****************************************************
+		   コンテンツ
+***************************************************** */
 $maxWidth: 1000px;
 $contentWidth: 760px;
-$contentPadding: 30px;
-.header__wrapper {
+.header {
     max-width: $maxWidth;
     margin-right: auto;
     margin-left: auto;
     padding-right: 10px;
     padding-left: 10px;
-    padding-top: $contentPadding;
-    padding-bottom: $contentPadding;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
-.hero__wrapper {
+.hero {
     max-width: $maxWidth;
     margin-right: auto;
     margin-left: auto;
     margin-bottom: 30px;
 }
-.footer__wrapper {
+.footer {
     max-width: $maxWidth;
     margin-right: auto;
     margin-left: auto;
-    padding-top: $contentPadding;
-    padding-bottom: $contentPadding;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
-.content__wrapper {
+.content {
     max-width: $contentWidth;
     margin-right: auto;
     margin-left: auto;
-    padding-top: $contentPadding;
-    padding-bottom: $contentPadding;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
-/* -----------------------------------------------------
-            フォントクラス
------------------------------------------------------ */
-/* -----------------------------------------------------
-            背景クラス
------------------------------------------------------ */
-.bg-gray {
-    background-color: #f5f5f5;
-}
+
 /* ****************************************************
 		   クラス別
 ***************************************************** */

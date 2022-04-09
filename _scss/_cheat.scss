@@ -1,0 +1,115 @@
+/* -----------------------------------------------------
+            フォントクラス
+----------------------------------------------------- */
+/* -----------------------------------------------------
+            背景クラス
+----------------------------------------------------- */
+.bg-gray {
+    background-color: #f5f5f5;
+}
+
+
+/* -----------------------------------------------------
+            half-media
+----------------------------------------------------- */
+
+.half-media {
+    display: flex;
+    align-items: center;
+  }
+  
+.half-media__img-wrapper {
+    flex: 0 1 48.33333%;
+    margin-right: 3.33333%;
+}
+
+.half-media__img {
+    width: 100%;
+}
+
+.half-media__body {
+    flex: 1;
+}
+
+.half-media__body > *:last-child {
+    margin-bottom: 0;
+}
+
+.half-media__title {
+    margin-bottom: 10px;
+    font-size: 1.125rem;
+    font-weight: bold;
+}
+
+// .half-media__text {
+    
+// }
+
+@media screen and (max-width: 768px) {
+    .half-media {
+        display: block;
+    }
+
+    .half-media__img-wrapper {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}
+
+// -- row-reverse -- //
+.media--reverse {
+    flex-direction: row-reverse;
+}
+  
+  .media--reverse .media__img-wrapper {
+    margin-right: 0;
+}
+  
+  .media--reverse .media__body {
+    margin-right: 3.33333%;
+    text-align: right;
+}
+  
+  @media screen and (max-width: 768px) {
+    .media--reverse .media__body {
+      margin-right: 0;
+    }
+}
+/* -----------------------------------------------------
+            card 1col
+----------------------------------------------------- */
+.card {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, .16);
+  }
+  
+  .card__img-wrapper {
+    position: relative;
+    padding-top: 56.25%;
+    overflow: hidden;
+  }
+  
+  .card__img {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    transform: translateY(-50%);
+  }
+  
+  .card__body {
+    padding: 15px;
+  }
+  
+  .card__body > *:last-child {
+    margin-bottom: 0;
+  }
+  
+  .card__title {
+    margin-bottom: 5px;
+    font-size: 1.125rem;
+    font-weight: bold;
+  }
+  
+  .card__text {
+    color: #777;
+  }
+  
