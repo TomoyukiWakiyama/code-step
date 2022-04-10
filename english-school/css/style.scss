@@ -22,12 +22,10 @@ $contentWidth: 760px;
     margin-left: auto;
 }
 .hero {
-    max-width: $maxWidth;
     margin-right: auto;
     margin-left: auto;
-    margin-bottom: 30px;
     padding: 0 20px;
-    height: 500px;
+    height: calc(720 / 1200 * 90vw);
     position: relative;
 }
 .footer {
@@ -37,12 +35,19 @@ $contentWidth: 760px;
     padding-top: 30px;
     padding-bottom: 30px;
 }
-.content {
-    max-width: $contentWidth;
-    margin-right: auto;
-    margin-left: auto;
+.reason {
     padding-top: 30px;
     padding-bottom: 30px;
+    overflow: hidden;
+}
+/* -----------------------------------------------------
+            FONT
+----------------------------------------------------- */
+.level2-heading {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 100px;
 }
 
 /* ****************************************************
@@ -99,14 +104,61 @@ $contentWidth: 760px;
 
 .hero__title {
     position: absolute;
-    top: 50%;
-    left: 0;
+    width: 40%;
+    top: 40%;
+    left: 4%;
     transform: translateY(-50%);
     z-index: 1;
-    padding: 1em;
+    padding: 4%;
     color: #fff;
     font-size: 2.5rem;
     font-weight: bold;
     background-color: rgba(255, 0, 0, 0.8);
     border-radius: 8px;
+}
+/* -----------------------------------------------------
+            .reason
+----------------------------------------------------- */
+.reason__inner {
+    background-color: #ff2a2a;
+    padding: 5% 0;
+}
+.reason__body-left{
+    width: 50%;
+    padding: 4%;
+    margin-bottom: 32px;
+    background-color: #fff;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    text-align: center;
+    transform: translateX(-100%);
+    transition: all 0.7s ease-out;
+    opacity: 0;
+}
+.reason__body-right {
+    width: 50%;
+    margin-left: 50%;
+    padding: 5%;
+    background-color: #fff;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    text-align: center;
+    transform: translateX(100%);
+    transition: all 0.7s ease-out;
+    opacity: 0;
+}
+.scroll-in {
+    transform: none;
+    opacity: 1;
+}
+.reason__title {
+    margin-bottom: .5em;
+    font-size: 1.75rem;
+    letter-spacing: .1em;
+    color:rgb(255, 0, 0);
+    font-weight: bold;
+}
+.reason__text {
+    font-size: 1rem;
+    letter-spacing: .1em;
 }
