@@ -1,0 +1,154 @@
+@charset "UTF-8";
+/* ****************************************************
+		   要素型
+***************************************************** */
+body {
+  color: #333;
+  font-size: 0.875rem;
+}
+
+p {
+  line-height: 1.5;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* ****************************************************
+		   コンテンツ
+***************************************************** */
+.header {
+  max-width: 1000px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.hero {
+  max-width: 1000px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 30px;
+  padding: 0 20px;
+  height: 500px;
+  position: relative;
+}
+
+.footer {
+  max-width: 1000px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.content {
+  max-width: 760px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+/* ****************************************************
+		   クラス別
+***************************************************** */
+/* -----------------------------------------------------
+            .hero
+----------------------------------------------------- */
+.hero-image__item {
+  position: absolute;
+  width: 75%;
+  top: 0;
+  right: 0;
+  opacity: 0;
+  -webkit-animation: fadeImages 15s infinite;
+          animation: fadeImages 15s infinite;
+  z-index: -1;
+  -webkit-filter: drop-shadow(0 0 10px white);
+          filter: drop-shadow(0 0 10px white);
+}
+
+.hero-image__item::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  -webkit-box-shadow: inset 0px 0px 20px 20px #fff;
+          box-shadow: inset 0px 0px 20px 20px #fff;
+}
+
+.hero-image__item:nth-child(1) {
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+}
+
+.hero-image__item:nth-child(2) {
+  -webkit-animation-delay: 5s;
+          animation-delay: 5s;
+}
+
+.hero-image__item:nth-child(3) {
+  -webkit-animation-delay: 10s;
+          animation-delay: 10s;
+}
+
+@-webkit-keyframes fadeImages {
+  0% {
+    opacity: 0;
+  }
+  15% {
+    opacity: 1;
+  }
+  30% {
+    opacity: 1;
+  }
+  45% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeImages {
+  0% {
+    opacity: 0;
+  }
+  15% {
+    opacity: 1;
+  }
+  30% {
+    opacity: 1;
+  }
+  45% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.hero-image__image {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.hero__title {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  z-index: 1;
+  padding: 1em;
+  color: #fff;
+  font-size: 2.5rem;
+  font-weight: bold;
+  background-color: rgba(255, 0, 0, 0.8);
+  border-radius: 8px;
+}
+/*# sourceMappingURL=style.css.map */

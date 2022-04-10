@@ -1,0 +1,112 @@
+/* ****************************************************
+		   要素型
+***************************************************** */
+body {
+    color: #333;
+    font-size: 0.875rem;
+}
+p {
+    line-height: 1.5;
+}
+img {
+    max-width: 100%;
+}
+/* ****************************************************
+		   コンテンツ
+***************************************************** */
+$maxWidth: 1000px;
+$contentWidth: 760px;
+.header {
+    max-width: $maxWidth;
+    margin-right: auto;
+    margin-left: auto;
+}
+.hero {
+    max-width: $maxWidth;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 30px;
+    padding: 0 20px;
+    height: 500px;
+    position: relative;
+}
+.footer {
+    max-width: $maxWidth;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.content {
+    max-width: $contentWidth;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+/* ****************************************************
+		   クラス別
+***************************************************** */
+/* -----------------------------------------------------
+            .hero
+----------------------------------------------------- */
+.hero-image__item {
+    position: absolute;
+    width: 75%;
+    top: 0;
+    right: 0;
+    opacity: 0;
+    animation: fadeImages 15s infinite;
+    z-index: -1;
+    filter: drop-shadow(0 0 10px white);
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        box-shadow: inset 0px 0px 20px 20px #fff;
+    }
+    @for $i from 1 through 3 {
+        &:nth-child(#{$i}) {
+            animation-delay: 0s + ($i - 1) * 5s ;
+        }
+    }
+}
+@keyframes fadeImages {
+    0% {
+        opacity: 0;
+    }
+    15% {
+        opacity: 1;
+      }
+    30% {
+        opacity: 1;
+    }
+    45% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+.hero-image__image {
+    width: 100%;
+    object-fit: cover;
+}
+
+.hero__title {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    z-index: 1;
+    padding: 1em;
+    color: #fff;
+    font-size: 2.5rem;
+    font-weight: bold;
+    background-color: rgba(255, 0, 0, 0.8);
+    border-radius: 8px;
+}
