@@ -1,3 +1,4 @@
+@import "mixin";
 /* ****************************************************
 		   要素型
 ***************************************************** */
@@ -62,9 +63,20 @@ $contentWidth: 760px;
     top: 0;
     right: 0;
     opacity: 0;
-    animation: fadeImages 15s infinite;
     z-index: -1;
     filter: drop-shadow(0 0 10px white);
+    @include animation(
+        $name: fadeImages,
+        $duration: 15s,
+        $iteration-count: infinite,
+        $timing-function: ease-in-out,
+    );
+    
+    @for $i from 1 through 3 {
+        &:nth-child(#{$i}) {
+            animation-delay: 0s + ($i - 1) * 5s ;
+        }
+    }
     &::after {
         content: "";
         position: absolute;
@@ -73,11 +85,6 @@ $contentWidth: 760px;
         left: 0;
         right: 0;
         box-shadow: inset 0px 0px 20px 20px #fff;
-    }
-    @for $i from 1 through 3 {
-        &:nth-child(#{$i}) {
-            animation-delay: 0s + ($i - 1) * 5s ;
-        }
     }
 }
 @keyframes fadeImages {
@@ -111,7 +118,7 @@ $contentWidth: 760px;
     z-index: 1;
     padding: 4%;
     color: #fff;
-    font-size: 2.5rem;
+    font-size: 3vmax;
     font-weight: bold;
     background-color: rgba(255, 0, 0, 0.8);
     border-radius: 8px;
@@ -132,8 +139,8 @@ $contentWidth: 760px;
     border-bottom-right-radius: 20px;
     text-align: center;
     transform: translateX(-100%);
-    transition: all 0.7s ease-out;
     opacity: 0;
+    transition: all 0.7s ease-out;
 }
 .reason__body-right {
     width: 50%;
@@ -144,8 +151,8 @@ $contentWidth: 760px;
     border-bottom-left-radius: 20px;
     text-align: center;
     transform: translateX(100%);
-    transition: all 0.7s ease-out;
     opacity: 0;
+    transition: all 0.7s ease-out;
 }
 .scroll-in {
     transform: none;

@@ -68,22 +68,23 @@ img {
   top: 0;
   right: 0;
   opacity: 0;
-  -webkit-animation: fadeImages 15s infinite;
-          animation: fadeImages 15s infinite;
   z-index: -1;
   -webkit-filter: drop-shadow(0 0 10px white);
           filter: drop-shadow(0 0 10px white);
-}
-
-.hero-image__item::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  -webkit-box-shadow: inset 0px 0px 20px 20px #fff;
-          box-shadow: inset 0px 0px 20px 20px #fff;
+  -webkit-animation-name: fadeImages;
+          animation-name: fadeImages;
+  -webkit-animation-duration: 15s;
+          animation-duration: 15s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: normal;
+          animation-direction: normal;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 
 .hero-image__item:nth-child(1) {
@@ -99,6 +100,17 @@ img {
 .hero-image__item:nth-child(3) {
   -webkit-animation-delay: 10s;
           animation-delay: 10s;
+}
+
+.hero-image__item::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  -webkit-box-shadow: inset 0px 0px 20px 20px #fff;
+          box-shadow: inset 0px 0px 20px 20px #fff;
 }
 
 @-webkit-keyframes fadeImages {
@@ -153,7 +165,7 @@ img {
   z-index: 1;
   padding: 4%;
   color: #fff;
-  font-size: 2.5rem;
+  font-size: 3vmax;
   font-weight: bold;
   background-color: rgba(255, 0, 0, 0.8);
   border-radius: 8px;
@@ -177,9 +189,9 @@ img {
   text-align: center;
   -webkit-transform: translateX(-100%);
           transform: translateX(-100%);
+  opacity: 0;
   -webkit-transition: all 0.7s ease-out;
   transition: all 0.7s ease-out;
-  opacity: 0;
 }
 
 .reason__body-right {
@@ -192,9 +204,9 @@ img {
   text-align: center;
   -webkit-transform: translateX(100%);
           transform: translateX(100%);
+  opacity: 0;
   -webkit-transition: all 0.7s ease-out;
   transition: all 0.7s ease-out;
-  opacity: 0;
 }
 
 .scroll-in {
