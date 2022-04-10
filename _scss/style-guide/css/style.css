@@ -1,0 +1,86 @@
+/* -----------------------------------------------------
+            .border-btn
+----------------------------------------------------- */
+.border-btn {
+  display: block;
+  width: 200px;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 20px 5px;
+  background-color: transparent;
+  border: 2px solid transparent;
+  color: #000;
+  font-size: 1rem;
+  text-align: center;
+  text-decoration: none;
+  -webkit-transition: .25s;
+  transition: .25s;
+  position: relative;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.border-btn::before {
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 2px;
+  height: 50%;
+  background-color: #e03131;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.border-btn > span::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 2px;
+  height: 50%;
+  background-color: #e03131;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.border-btn::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 20%;
+  height: 2px;
+  background-color: #e03131;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.border-btn > span::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 20%;
+  height: 2px;
+  background-color: #e03131;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.border-btn:focus::before, .border-btn:hover::before {
+  height: 100%;
+}
+
+.border-btn:focus > span::before, .border-btn:hover > span::before {
+  height: 100%;
+}
+
+.border-btn:focus::after, .border-btn:hover::after {
+  width: 100%;
+}
+
+.border-btn:focus > span::after, .border-btn:hover > span::after {
+  width: 100%;
+}
+/*# sourceMappingURL=style.css.map */
