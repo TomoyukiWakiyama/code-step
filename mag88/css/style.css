@@ -1,0 +1,264 @@
+@charset "UTF-8";
+/* ****************************************************
+		   要素型
+***************************************************** */
+body {
+  color: #333;
+  font-size: 0.875rem;
+}
+
+p {
+  line-height: 1.5;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* ****************************************************
+		   コンテンツ
+***************************************************** */
+.header {
+  height: 100vh;
+  background-image: url(../images/mainvisual.jpg);
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+
+.hero {
+  max-width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 30px;
+}
+
+.footer {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.half-media {
+  max-width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-right: 5%;
+  padding-left: 5%;
+}
+
+.fashion-style {
+  height: 520px;
+  background-image: url(../images/fashion.jpg);
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  padding-top: 60px;
+}
+
+.catalog-antique {
+  max-width: 1200px;
+  padding: 60px 5%;
+  background-color: #f5f5f5;
+}
+
+/* -----------------------------------------------------
+            FONT
+----------------------------------------------------- */
+.level2-heading {
+  text-align: center;
+  font-size: 1.25rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.main-text {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* -----------------------------------------------------
+            BTN
+----------------------------------------------------- */
+.global-btn {
+  display: block;
+  width: 200px;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 20px 5px;
+  background-color: transparent;
+  border: 1px solid #333;
+  color: #000;
+  font-size: .75rem;
+  text-align: center;
+  text-decoration: none;
+  -webkit-transition: .25s;
+  transition: .25s;
+}
+
+/* ****************************************************
+		   クラス別
+***************************************************** */
+/* -----------------------------------------------------
+            .header
+----------------------------------------------------- */
+.header-logo {
+  text-align: right;
+  padding-top: 30px;
+  padding-right: 30px;
+}
+
+/* -----------------------------------------------------
+            .half-media
+----------------------------------------------------- */
+.half-media__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.half-media__body-left,
+.half-media__body-right {
+  position: relative;
+  -webkit-transition: .25s;
+  transition: .25s;
+}
+
+.half-media__body-left:focus, .half-media__body-left:hover,
+.half-media__body-right:focus,
+.half-media__body-right:hover {
+  opacity: 0.8;
+}
+
+.half-media__body-left {
+  width: 49%;
+  margin-right: 2%;
+}
+
+.half-media__body-right {
+  width: 49%;
+}
+
+.half-media__img-left,
+.half-media__img-right {
+  max-width: 100%;
+}
+
+.half-media__content {
+  position: absolute;
+  top: 40%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  padding: 20px 0 20px;
+  width: 80%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.half-media__title {
+  margin-bottom: 1em;
+  color: #fff;
+  font-weight: bold;
+}
+
+.half-media__text {
+  color: #fff;
+}
+
+@media screen and (max-width: 896px) {
+  .half-media__inner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .half-media__body-left {
+    width: 100%;
+    margin-right: 0;
+  }
+  .half-media__body-right {
+    width: 100%;
+  }
+}
+
+/* -----------------------------------------------------
+            .catalog-antique
+----------------------------------------------------- */
+.catalog-antique__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.catalog-antique__img-wrapper {
+  width: 48%;
+  margin-right: 3.33333%;
+}
+
+.catalog-antique__img {
+  width: 100%;
+}
+
+.catalog-antique__body {
+  width: 48%;
+}
+
+.catalog-antique__body .main-text:last-child {
+  margin-bottom: 0;
+}
+
+.catalog-antique.reverse .catalog-antique__inner {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.catalog-antique.reverse .catalog-antique__img-wrapper {
+  margin-right: 0;
+}
+
+.catalog-antique.reverse .catalog-antique__body {
+  margin-right: 3.33333%;
+}
+
+@media screen and (max-width: 896px) {
+  .catalog-antique__inner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .catalog-antique__img-wrapper {
+    width: 100%;
+    margin-right: 0;
+  }
+  .catalog-antique__img {
+    width: 100%;
+    margin-bottom: 60px;
+  }
+  .catalog-antique__body {
+    width: 100%;
+  }
+  .catalog-antique.reverse .catalog-antique__inner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .catalog-antique.reverse .catalog-antique__body {
+    margin-right: 0%;
+  }
+}
+/*# sourceMappingURL=style.css.map */
