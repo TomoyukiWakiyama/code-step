@@ -41,8 +41,16 @@ img {
 }
 
 .reason {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  overflow: hidden;
+}
+
+.review {
+  max-width: 860px;
+  margin: 0 auto;
+  padding-top: 80px;
+  padding-bottom: 80px;
   overflow: hidden;
 }
 
@@ -226,5 +234,64 @@ img {
 .reason__text {
   font-size: 1rem;
   letter-spacing: .1em;
+}
+
+/* -----------------------------------------------------
+            .review
+----------------------------------------------------- */
+.review-person__inner {
+  width: 72%;
+  margin-bottom: 80px;
+  padding: 5%;
+  background-color: #e9f1fb;
+  border-radius: 8px;
+  opacity: 0;
+}
+
+.review-person__inner:nth-child(2n+1) {
+  margin-left: auto;
+}
+
+.balloonReview {
+  -webkit-animation-name: balloonReview;
+          animation-name: balloonReview;
+  -webkit-animation-duration: 0.7s;
+          animation-duration: 0.7s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-direction: normal;
+          animation-direction: normal;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes balloonReview {
+  0% {
+    -webkit-transform: scale(0.1);
+            transform: scale(0.1);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes balloonReview {
+  0% {
+    -webkit-transform: scale(0.1);
+            transform: scale(0.1);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
 }
 /*# sourceMappingURL=style.css.map */
